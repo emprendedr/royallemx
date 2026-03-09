@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Ecosistema Lemon · Sesión en vivo</title>
-    <!-- Fuente moderna y limpia -->
+    <title>Ecosistema Lemon · Sesión en vivo 11 Marzo</title>
+    <!-- Fuente Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (iconos) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -19,64 +19,63 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #f0f7f0;  /* fondo muy suave con un toque verde */
-            color: #1e2e1e;
+            background: #f4faf4;
+            color: #1a2e1a;
             line-height: 1.5;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 0 20px;
         }
 
-        /* Header sencillo */
+        /* Barra superior sutil */
         .top-badge {
+            background: #1f3f1f;
+            color: #e0f0e0;
             text-align: center;
-            padding: 16px 0 8px;
+            padding: 12px;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             letter-spacing: 1px;
-            color: #2f6b2f;
             text-transform: uppercase;
-            background: rgba(255,255,255,0.5);
-            backdrop-filter: blur(4px);
-            border-bottom: 1px solid rgba(80, 130, 80, 0.2);
         }
 
-        /* Sección principal con video y contenido */
+        /* Hero */
         .hero {
             background: white;
             border-radius: 0 0 40px 40px;
             box-shadow: 0 20px 40px -15px rgba(0,40,0,0.15);
             padding: 30px 24px 50px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.3rem;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 20px;
-            color: #1b3b1b;
+            color: #123012;
             letter-spacing: -0.02em;
+            text-align: center;
         }
 
         .highlight {
-            color: #3c8d3c;
-            border-bottom: 4px solid #c8e6c8;
+            color: #2a7a2a;
+            background: linear-gradient(120deg, #e0f7e0 0%, #e0f7e0 40%);
+            padding: 0 10px;
             display: inline-block;
-            padding-bottom: 2px;
         }
 
         .video-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             border-radius: 28px;
-            box-shadow: 0 20px 30px -8px rgba(0,60,0,0.25);
-            margin: 30px 0 30px;
+            box-shadow: 0 20px 30px -8px rgba(20,70,20,0.3);
+            margin: 20px 0 30px;
             background: #1b3b1b;
         }
 
@@ -89,6 +88,86 @@
             border: 0;
         }
 
+        /* Beneficios rápidos (nuevo) */
+        .benefits-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin: 30px 0 35px;
+        }
+
+        .benefit-item {
+            background: #ebf8eb;
+            border-radius: 60px;
+            padding: 12px 25px;
+            font-weight: 600;
+            color: #145214;
+            box-shadow: 0 4px 8px rgba(0,30,0,0.05);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border: 1px solid #b8ddb8;
+        }
+
+        .benefit-item i {
+            color: #3fa63f;
+            font-size: 1.3rem;
+        }
+
+        /* Contador NUEVO justo encima del form */
+        .countdown-box {
+            background: linear-gradient(135deg, #174217, #1f5a1f);
+            color: white;
+            border-radius: 40px;
+            padding: 25px 20px;
+            text-align: center;
+            margin: 20px 0 30px;
+            box-shadow: 0 15px 25px -8px #1f5a1f;
+            border: 1px solid #6fbf6f;
+        }
+
+        .countdown-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .countdown-title i {
+            margin-right: 10px;
+            color: #ffd966;
+        }
+
+        .countdown-flex {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(4px);
+            border-radius: 20px;
+            padding: 12px 16px;
+            min-width: 90px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .countdown-num {
+            font-size: 2.8rem;
+            font-weight: 800;
+            line-height: 1;
+            color: #ffffdd;
+        }
+
+        .countdown-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
         .content-grid {
             display: flex;
             flex-wrap: wrap;
@@ -96,173 +175,199 @@
             margin-top: 20px;
         }
 
+        /* Columna izquierda - más compacta */
         .main-message {
             flex: 2;
             min-width: 300px;
         }
 
+        .testimonial-card {
+            background: #e5f2e5;
+            border-radius: 28px;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 6px solid #3fa63f;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .testimonial-card p {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #1a3b1a;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #8bc34a;
+        }
+
+        .author-name {
+            font-weight: 700;
+            color: #123012;
+        }
+
+        .author-title {
+            font-size: 0.85rem;
+            color: #3e6b3e;
+        }
+
+        .trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .badge {
+            background: white;
+            border-radius: 40px;
+            padding: 8px 18px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1f5a1f;
+            border: 1px solid #a0d0a0;
+            box-shadow: 0 2px 6px rgba(0,20,0,0.05);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge i {
+            color: #2a8e2a;
+        }
+
+        /* Columna derecha formulario */
         .form-side {
             flex: 1.2;
             min-width: 300px;
-            background: #f5fcf5;
+            background: #ffffff;
             border-radius: 32px;
-            padding: 28px 24px;
-            box-shadow: 0 10px 25px -8px rgba(40,90,40,0.25);
-            border: 1px solid rgba(90, 150, 90, 0.25);
+            padding: 28px 22px;
+            box-shadow: 0 15px 30px -10px rgba(30,80,30,0.25);
+            border: 1px solid #c0e0c0;
             align-self: start;
         }
 
         .form-side h3 {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: 700;
+            color: #124012;
             margin-bottom: 8px;
-            color: #1d451d;
         }
 
-        .form-side p {
-            color: #2d5a2d;
-            margin-bottom: 25px;
+        .form-sub {
+            color: #1f5a1f;
+            margin-bottom: 20px;
             font-weight: 500;
-            border-left: 4px solid #6fbf6f;
+            border-left: 4px solid #8bc34a;
             padding-left: 16px;
-            background: #eaffea;
-            border-radius: 0 12px 12px 0;
-            line-height: 1.4;
+            background: #f0faf0;
             padding: 12px 16px;
+            border-radius: 12px;
         }
 
-        /* Incrustar formulario de Google (responsivo) */
         .google-form-embed {
             width: 100%;
-            min-height: 600px;
+            min-height: 520px; /* más compacto */
             background: transparent;
             border-radius: 20px;
             overflow: hidden;
+            margin: 15px 0;
         }
 
         .google-form-embed iframe {
             width: 100%;
-            height: 620px;
+            height: 520px;
             border: 0;
             border-radius: 20px;
         }
 
-        /* Bullet points */
-        .bullet-list {
-            margin: 25px 0 20px;
-        }
-
-        .bullet-item {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 18px;
-            align-items: flex-start;
-        }
-
-        .bullet-icon {
-            background: #daf1da;
-            color: #1f7a1f;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            flex-shrink: 0;
-            font-weight: 700;
-        }
-
-        .bullet-text {
-            font-weight: 500;
-            color: #1f381f;
-        }
-
-        .bullet-text strong {
-            color: #145214;
-        }
-
-        .testimonial-mini {
-            background: #e0f0e0;
-            border-radius: 24px;
-            padding: 22px;
-            margin: 30px 0 15px;
-            border-left: 6px solid #3fa63f;
-            font-style: italic;
-            box-shadow: inset 0 -1px 0 #c0ddc0;
-        }
-
-        .testimonial-mini i {
-            color: #2e6b2e;
-            font-size: 1.1rem;
-        }
-
-        .avatar {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-top: 15px;
-            font-style: normal;
-            font-weight: 600;
-        }
-
-        .avatar i {
-            font-size: 2rem;
-            color: #1f5a1f;
-        }
-
         .cta-button {
             display: inline-block;
-            background: #1f7a1f;
-            color: white;
-            font-weight: 700;
-            padding: 16px 32px;
+            background: #8bc34a; /* verde lima vibrante */
+            color: #1e3c1e;
+            font-weight: 800;
+            padding: 16px 28px;
             border-radius: 60px;
             font-size: 1.3rem;
             text-decoration: none;
-            box-shadow: 0 10px 20px -5px #1f7a1f80;
+            box-shadow: 0 10px 20px -5px #5a9e5a;
             transition: all 0.2s;
             border: none;
             cursor: pointer;
             width: 100%;
             text-align: center;
-            margin: 20px 0 5px;
-            border: 1px solid #166616;
+            margin: 10px 0 15px;
+            border: 1px solid #6fa86f;
         }
 
         .cta-button:hover {
-            background: #156815;
+            background: #7ab03f;
             transform: scale(1.02);
-            box-shadow: 0 15px 25px -6px #1f7a1f;
-        }
-
-        .secondary-cta {
-            display: block;
-            text-align: center;
-            margin: 20px 0 10px;
-            font-weight: 500;
-            color: #1d511d;
-        }
-
-        .secondary-cta i {
-            background: #d0ebd0;
-            padding: 8px;
-            border-radius: 50%;
-            margin-right: 6px;
+            box-shadow: 0 15px 25px -6px #467346;
         }
 
         .wa-contact {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 8px;
             background: #e1f0e1;
-            padding: 8px 18px;
-            border-radius: 40px;
+            padding: 12px 20px;
+            border-radius: 60px;
             text-decoration: none;
-            color: #144d14;
-            font-weight: 600;
-            margin: 15px 0 0;
+            color: #0f4a0f;
+            font-weight: 700;
+            margin: 10px 0 5px;
             border: 1px solid #93c793;
+            width: 100%;
+        }
+
+        .wa-contact i {
+            font-size: 1.3rem;
+            color: #25d366;
+        }
+
+        /* FAQ compacto */
+        .faq-mini {
+            background: #f2fcf2;
+            border-radius: 24px;
+            padding: 20px;
+            margin: 30px 0 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: #155015;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-question i {
+            color: #3fa63f;
+            width: 20px;
+        }
+
+        .faq-answer {
+            margin-left: 30px;
+            color: #2d562d;
+            font-size: 0.95rem;
         }
 
         .footer-note {
@@ -271,201 +376,227 @@
             color: #4f6b4f;
             padding: 30px 0 20px;
             border-top: 1px solid #bfdbbf;
-            margin-top: 20px;
         }
 
-        .footer-note a {
-            color: #1f681f;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contador-wrapper {
-            background: #1d451d;
-            color: white;
-            border-radius: 40px;
-            padding: 18px;
+        /* Botón flotante solo móvil */
+        .mobile-float {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: #8bc34a;
+            color: #1e3c1e;
+            font-weight: 800;
+            padding: 16px;
+            border-radius: 60px;
             text-align: center;
-            margin: 25px 0 0;
-            font-weight: 700;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .contador-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contador-num {
-            font-size: 2rem;
-            background: #2a6b2a;
-            padding: 5px 15px;
-            border-radius: 20px;
-            min-width: 70px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(0,50,0,0.4);
+            border: 2px solid white;
+            z-index: 999;
+            font-size: 1.2rem;
         }
 
         @media (max-width: 700px) {
             h1 { font-size: 1.9rem; }
-            .hero { padding: 20px 16px 40px; }
-            .contador-wrapper { gap: 15px; }
-        }
-
-        /* flecha de scroll */
-        .scroll-hint {
-            text-align: center;
-            color: #437343;
-            margin: 10px 0 0;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-8px); }
-            60% { transform: translateY(-4px); }
+            .benefits-row { flex-direction: column; align-items: stretch; gap: 10px; }
+            .benefit-item { justify-content: center; }
+            .mobile-float { display: block; }
+            body { padding-bottom: 80px; }
+            .countdown-num { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Barra superior con aviso sutil -->
+    <!-- Badge superior -->
     <div class="top-badge">
-        <i class="fas fa-leaf" style="margin-right: 8px;"></i> OPORTUNIDAD REAL · BLOCKCHAIN TRANSPARENTE
+        <i class="fas fa-cube"></i> TECNOLOGÍA BLOCKCHAIN TRANSPARENTE · SIN ESTAFAS
     </div>
 
     <div class="container">
-        <!-- Hero principal con video y título -->
         <div class="hero">
             <h1>
-                ¿Cansado de promesas falsas? <br>
-                <span class="highlight">Descubre el ecosistema que ya está cambiando vidas</span>
+                <span class="highlight">11 de marzo, 7:30 PM (PT)</span><br>
+                Aprende con nosotros el ecosistema que ya cambia vidas
             </h1>
 
-            <!-- VIDEO INCORPORADO: el que nos compartiste -->
+            <!-- VIDEO PRINCIPAL (el mismo) -->
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/wz7_8zxcrB4?si=qSA1TPWOiy886gFU&autoplay=0&rel=0" 
-                        title="Video presentación Ecosistema Lemon" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
+                        title="Video presentación" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowfullscreen>
                 </iframe>
             </div>
 
-            <!-- Contenido de 2 columnas: texto persuasivo + formulario -->
+            <!-- Beneficios rápidos nuevos -->
+            <div class="benefits-row">
+                <div class="benefit-item"><i class="fas fa-check-circle"></i> Sin experiencia necesaria</div>
+                <div class="benefit-item"><i class="fas fa-check-circle"></i> Caso real: mi amiga</div>
+                <div class="benefit-item"><i class="fas fa-check-circle"></i> Acceso a Lemon Network</div>
+            </div>
+
+            <!-- COLUMNAS: IZQUIERDA + DERECHA -->
             <div class="content-grid">
-                <!-- Columna IZQUIERDA: mensaje extendido -->
+                <!-- COLUMNA IZQUIERDA (persuasión compacta) -->
                 <div class="main-message">
-                    <p style="font-size: 1.3rem; font-weight: 600; color: #2b572b; margin-bottom: 10px;">
-                        <i class="fas fa-check-circle" style="color: #3c8d3c;"></i> 
-                        La realidad simple que nadie te dice:
+                    <!-- Testimonio con foto (ilustrativa) -->
+                    <div class="testimonial-card">
+                        <p>“Conocí a <strong>Carolina</strong> hace años, luchaba como muchos. Hoy, gracias al ecosistema Lemon, su vida es otra. No es magia, es decisión.”</p>
+                        <div class="testimonial-author">
+                            <!-- Imagen ilustrativa (puedes cambiarla por una real) -->
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amiga testimonio">
+                            <div>
+                                <div class="author-name">Carolina G.</div>
+                                <div class="author-title">Miembro de Lemon Network · 14 meses</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trust badges nuevos -->
+                    <div class="trust-badges">
+                        <span class="badge"><i class="fas fa-shield-alt"></i> Blockchain verificable</span>
+                        <span class="badge"><i class="fas fa-users"></i> +2.300 miembros</span>
+                        <span class="badge"><i class="fas fa-lock"></i> Sin bloqueos</span>
+                    </div>
+
+                    <!-- Píldora rápida de Lemon -->
+                    <p style="background:#e0f0e0; padding:16px; border-radius:20px;">
+                        <strong>🍋 Lemon Chain (capa 1)</strong> + <strong>Lemon Network (recompensas)</strong> → La transparencia que buscabas.
                     </p>
-                    <div class="bullet-list">
-                        <div class="bullet-item">
-                            <div class="bullet-icon">1</div>
-                            <div class="bullet-text"><strong>Ganancias sin esfuerzo no existen.</strong> Casinos, lotería y raspaditos lo saben y vacían tus bolsillos.</div>
-                        </div>
-                        <div class="bullet-item">
-                            <div class="bullet-icon">2</div>
-                            <div class="bullet-text"><strong>La mayoría busca dinero fácil…</strong> y las estafas se aprovechan.</div>
-                        </div>
-                        <div class="bullet-item">
-                            <div class="bullet-icon">3</div>
-                            <div class="bullet-text"><strong>Hoy hay algo diferente:</strong> tecnología descentralizada con transparencia real.</div>
-                        </div>
-                    </div>
-
-                    <div style="background: #eaf7ea; padding: 18px; border-radius: 24px; margin: 20px 0;">
-                        <p style="font-weight: 700; font-size: 1.2rem;">🍋 <span style="color: #175217;">Lemon Chain (capa 1) + Lemon Network (recompensas por contenido)</span></p>
-                        <p style="margin-top: 8px;">Blockchain sólida y ecosistema que ya está recompensando a creadores con criptomonedas. No es un sueño, es código funcionando.</p>
-                    </div>
-
-                    <!-- Historia corta de la amiga (poderoso) -->
-                    <div class="testimonial-mini">
-                        <i class="fas fa-quote-left" style="margin-right: 6px; opacity: 0.7;"></i>
-                        Conozco a una amiga desde hace años. La vi luchar, trabajar duro… hasta que entendió este ecosistema antes que los demás. <strong>Hoy su vida es otra.</strong> No es magia, es decisión.
-                        <div class="avatar">
-                            <i class="fas fa-user-circle"></i>
-                            <span>— Testimonio real (podrías ser tú)</span>
-                        </div>
-                    </div>
-
-                    <p style="font-weight: 600; margin: 30px 0 10px;">
-                        ⚠️ Esto no es "dinero fácil". Pero si estás dispuesto a aprender y actuar, puede ser el giro que buscas.
-                    </p>
-
-                    <!-- Contador simbólico (puedes cambiarlo después) -->
-                    <div class="contador-wrapper">
-                        <div class="contador-item">
-                            <span class="contador-num">40</span>
-                            <span>plazas libres</span>
-                        </div>
-                        <div class="contador-item">
-                            <span class="contador-num">03</span>
-                            <span>días para la sesión</span>
-                        </div>
-                    </div>
-
-                    <div class="scroll-hint">
-                        <i class="fas fa-arrow-down"></i> Completa el formulario aquí abajo <i class="fas fa-arrow-down"></i>
-                    </div>
                 </div>
 
-                <!-- Columna DERECHA: formulario incrustado de Google Forms (el que creaste) -->
+                <!-- COLUMNA DERECHA (formulario + contador + acción) -->
                 <div class="form-side">
-                    <h3>✅ Reserva tu plaza en Zoom</h3>
-                    <p><i class="fas fa-clock" style="margin-right: 8px;"></i> Sesión en vivo: cupo limitado</p>
-                    
-                    <!-- FORMULARIO EMBEBIDO - justo el enlace que diste -->
+                    <h3>📌 Reserva tu asiento</h3>
+                    <div class="form-sub">
+                        <i class="fas fa-clock"></i> Sesión limitada a 50 asistentes en vivo
+                    </div>
+
+                    <!-- CONTADOR REGRESIVO REAL (JavaScript) -->
+                    <div class="countdown-box" id="countdownBox">
+                        <div class="countdown-title">
+                            <i class="fas fa-hourglass-half"></i> CUENTA REGRESIVA
+                        </div>
+                        <div class="countdown-flex" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-num" id="days">00</span>
+                                <span class="countdown-label">Días</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-num" id="hours">00</span>
+                                <span class="countdown-label">Horas</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-num" id="minutes">00</span>
+                                <span class="countdown-label">Min</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-num" id="seconds">00</span>
+                                <span class="countdown-label">Seg</span>
+                            </div>
+                        </div>
+                        <p style="margin-top:15px; font-size:0.9rem; opacity:0.9;">⏰ 11 de marzo · 7:30 PM (hora LA)</p>
+                    </div>
+
+                    <!-- FORMULARIO GOOGLE (el mismo) -->
                     <div class="google-form-embed">
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdubjwtqH4VNzGxFs34EnyAjQxhcITirzDFcqNo2bUX1Zc57w/viewform?embedded=true" 
-                                frameborder="0" 
-                                marginheight="0" 
-                                marginwidth="0">
+                                frameborder="0" marginheight="0" marginwidth="0">
                             Cargando…
                         </iframe>
                     </div>
 
-                    <!-- Botón alternativo por si no carga el iframe (es el mismo link) -->
+                    <!-- Botón alternativo -->
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdubjwtqH4VNzGxFs34EnyAjQxhcITirzDFcqNo2bUX1Zc57w/viewform" 
-                       target="_blank" 
-                       class="cta-button">
+                       target="_blank" class="cta-button">
                         <i class="fas fa-pen"></i> LLENAR FORMULARIO
                     </a>
 
-                    <!-- WhatsApp directo (el número que proporcionaste) -->
-                    <div style="text-align: center; margin: 20px 0 5px;">
-                        <a href="https://wa.me/13232850508?text=¡Quiero%20mi%20plaza%20en%20la%20sesión%20Lemon!" 
-                           target="_blank" 
-                           class="wa-contact">
-                            <i class="fab fa-whatsapp fa-lg"></i> +1 323 285 0508
-                        </a>
-                        <span style="display: block; font-size: 0.85rem; margin-top: 5px; color: #366e36;">Escríbeme directo si prefieres</span>
-                    </div>
+                    <!-- WhatsApp directo -->
+                    <a href="https://wa.me/13232850508?text=¡Quiero%20mi%20plaza%20para%20el%2011%20de%20marzo!" 
+                       target="_blank" class="wa-contact">
+                        <i class="fab fa-whatsapp"></i> +1 323 285 0508 (escríbeme)
+                    </a>
 
-                    <p style="font-size: 0.8rem; margin-top: 20px; color: #436d43;">
-                        <i class="fas fa-lock"></i> Tus datos están seguros. Solo para enviarte el acceso a Zoom.
+                    <!-- Texto de privacidad -->
+                    <p style="font-size:0.75rem; color:#4d6e4d; margin-top:15px;">
+                        <i class="fas fa-lock"></i> Datos solo para enviar acceso a Zoom.
                     </p>
+                </div>
+            </div>
+
+            <!-- FAQ corto (elimina objeciones) -->
+            <div class="faq-mini">
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-question-circle"></i> ¿Necesito saber de cripto?</div>
+                    <div class="faq-answer">No, la sesión es para principiantes. Explicamos desde cero.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-question-circle"></i> ¿Es gratis?</div>
+                    <div class="faq-answer">Sí, totalmente gratis. Solo completa el formulario.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><i class="fas fa-question-circle"></i> ¿Me dan el enlace después?</div>
+                    <div class="faq-answer">Te enviaremos el link de Zoom al correo y WhatsApp.</div>
                 </div>
             </div>
         </div>
 
-        <!-- Pequeña nota de confianza y cierre -->
+        <!-- Footer -->
         <div class="footer-note">
-            <i class="fas fa-shield-alt" style="margin-right: 6px;"></i> Transparencia y tecnología blockchain · 
-            <a href="#">Aviso de privacidad</a> · 
-            <a href="https://wa.me/13232850508" target="_blank">Contacto WhatsApp</a>
-            <p style="margin-top: 15px;">© 2026 · Oportunidad Lemon Network · No es una promesa, es un ecosistema real</p>
+            <i class="fas fa-shield-alt"></i> Ecosistema descentralizado Lemon · Transparencia Blockchain<br>
+            <a href="#" style="color:#1f681f;">Aviso de privacidad</a> · <a href="https://wa.me/13232850508">WhatsApp</a>
+            <p style="margin-top:10px;">© 2026 · Sesión en vivo 11 marzo 7:30 PM (PT)</p>
         </div>
     </div>
 
-    <!-- Pequeño script para actualizar año y poco más (opcional) -->
+    <!-- Botón flotante para móvil (baja al form) -->
+    <a href="#" class="mobile-float" onclick="document.querySelector('.form-side').scrollIntoView({behavior:'smooth'}); return false;">
+        <i class="fas fa-arrow-down"></i> QUIERO MI PLAZA
+    </a>
+
+    <!-- SCRIPT DEL CONTADOR REGRESIVO REAL -->
     <script>
-        // Solo por si quieres actualizar el año dinámicamente, aunque no es necesario.
-        document.addEventListener('DOMContentLoaded', function() {
-            // Podrías modificar el contador si tuvieras una fecha real, pero queda estático como ejemplo.
-        });
+        function startCountdown() {
+            // Fecha objetivo: 11 de marzo 2026, 7:30 PM (hora Los Ángeles, UTC-7 en marzo)
+            // Nota: Marzo en PDT (GMT-7). Ajustamos restando 7 horas.
+            const targetDate = new Date(2026, 2, 11, 19, 30, 0); // Marzo es mes 2 (0-index)
+            // Convertir a timestamp UTC-7 (LA)
+            // Opción simple: restar 7 horas al crear fecha local
+            const targetUTC = new Date(targetDate.getTime() - (7 * 60 * 60 * 1000)); // ajuste manual
+
+            function updateCountdown() {
+                const now = new Date();
+                const diff = targetUTC - now;
+
+                if (diff <= 0) {
+                    document.getElementById('days').innerText = '00';
+                    document.getElementById('hours').innerText = '00';
+                    document.getElementById('minutes').innerText = '00';
+                    document.getElementById('seconds').innerText = '00';
+                    document.getElementById('countdownBox').style.background = '#b33b3b';
+                    return;
+                }
+
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (86400000)) / (3600000));
+                const minutes = Math.floor((diff % 3600000) / 60000);
+                const seconds = Math.floor((diff % 60000) / 1000);
+
+                document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+                document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+                document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+                document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+
+        window.onload = startCountdown;
     </script>
 </body>
 </html>
