@@ -112,6 +112,54 @@
             font-size: 1.3rem;
         }
 
+        /* Nueva sección de beneficios exclusivos */
+        .exclusive-benefits {
+            background: linear-gradient(145deg, #dcf5dc, #c0e6c0);
+            border-radius: 40px;
+            padding: 30px;
+            margin: 30px 0 30px;
+            border: 1px solid #9ac79a;
+        }
+
+        .exclusive-benefits h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0d3d0d;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .exclusive-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .exclusive-item {
+            flex: 1 1 200px;
+            min-width: 200px;
+            background: white;
+            border-radius: 28px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px -8px #2b5a2b;
+            border: 1px solid #b0dab0;
+        }
+
+        .exclusive-item i {
+            font-size: 2.5rem;
+            color: #2a7a2a;
+            margin-bottom: 15px;
+        }
+
+        .exclusive-item p {
+            font-weight: 600;
+            color: #1a401a;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
         .content-grid {
             display: flex;
             flex-wrap: wrap;
@@ -219,7 +267,6 @@
             border-radius: 12px;
         }
 
-        /* Botón principal para formulario (reemplaza al iframe) */
         .form-button {
             display: block;
             background: #8bc34a;
@@ -320,6 +367,8 @@
             h1 { font-size: 1.9rem; }
             .benefits-row { flex-direction: column; align-items: stretch; gap: 10px; }
             .benefit-item { justify-content: center; }
+            .exclusive-grid { flex-direction: column; align-items: center; }
+            .exclusive-item { width: 100%; }
         }
     </style>
 </head>
@@ -344,23 +393,47 @@
                 </iframe>
             </div>
 
+            <!-- Beneficios rápidos -->
             <div class="benefits-row">
                 <div class="benefit-item"><i class="fas fa-check-circle"></i> Sin experiencia necesaria</div>
-                <div class="benefit-item"><i class="fas fa-check-circle"></i> Caso real: María, +6 años en la red</div>
+                <div class="benefit-item"><i class="fas fa-check-circle"></i> Caso real: María, 6 años en la industria</div>
                 <div class="benefit-item"><i class="fas fa-check-circle"></i> Acceso a Lemon Network</div>
+            </div>
+
+            <!-- NUEVA SECCIÓN: Beneficios exclusivos (4 puntos) -->
+            <div class="exclusive-benefits">
+                <h3>✨ Beneficios exclusivos al unirte</h3>
+                <div class="exclusive-grid">
+                    <div class="exclusive-item">
+                        <i class="fas fa-gift"></i>
+                        <p>Más de $1000 en bonos por sumarte a la comunidad</p>
+                    </div>
+                    <div class="exclusive-item">
+                        <i class="fas fa-robot"></i>
+                        <p>Duplicación del sistema para que trabaje en automático 24/7 por ti</p>
+                    </div>
+                    <div class="exclusive-item">
+                        <i class="fas fa-brain"></i>
+                        <p>Te enseñamos a usar la IA paso a paso para monetizar</p>
+                    </div>
+                    <div class="exclusive-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <p>Entrenamientos paso a paso vía Zoom en vivo + grabaciones</p>
+                    </div>
+                </div>
             </div>
 
             <div class="content-grid">
                 <!-- COLUMNA IZQUIERDA -->
                 <div class="main-message">
                     <div class="testimonial-card">
-                        <p>“Conozco a <strong>María</strong> desde hace años. Tiene más de 6 años en el ecosistema y hoy es una referencia. Su experiencia demuestra que esto no es moda, es el futuro.”</p>
+                        <p>“Conozco a <strong>María</strong> desde hace años. Tiene más de 6 años en la industria y es experta en blockchain. Su experiencia demuestra que esto no es moda, es el futuro.”</p>
                         <div class="testimonial-author">
-                            <!-- Imagen ilustrativa, puedes reemplazarla por una real -->
+                            <!-- Imagen ilustrativa, puedes reemplazarla -->
                             <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="María testimonio">
                             <div>
                                 <div class="author-name">María G.</div>
-                                <div class="author-title">+6 años en Lemon Network · Experta en blockchain</div>
+                                <div class="author-title">6 años en la industria · Experta en blockchain</div>
                             </div>
                         </div>
                     </div>
@@ -376,21 +449,21 @@
                     </p>
                 </div>
 
-                <!-- COLUMNA DERECHA (formulario simplificado) -->
+                <!-- COLUMNA DERECHA (formulario) -->
                 <div class="form-side">
                     <h3>📌 Accede a la sesión</h3>
                     <div class="form-sub">
                         <i class="fas fa-clock"></i> Cupo limitado para mantener la calidad
                     </div>
 
-                    <!-- BOTÓN PARA FORMULARIO (enlace directo) -->
+                    <!-- BOTÓN FORMULARIO -->
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdubjwtqH4VNzGxFs34EnyAjQxhcITirzDFcqNo2bUX1Zc57w/viewform" 
                        target="_blank" 
                        class="form-button">
                         <i class="fas fa-pen"></i> INGRESAR AL FORMULARIO
                     </a>
 
-                    <!-- BOTÓN DE WHATSAPP (sin número visible) -->
+                    <!-- BOTÓN WHATSAPP SIN NÚMERO -->
                     <a href="https://wa.me/13232850508?text=Hola%2C%20quiero%20participar%20en%20la%20sesi%C3%B3n%20del%20ecosistema%20Lemon" 
                        target="_blank" 
                        class="wa-button">
