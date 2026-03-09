@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Ecosistema Lemon · Sesión en vivo 11 Marzo</title>
+    <title>Ecosistema Lemon · Oportunidad real</title>
     <!-- Fuente Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,6 @@
             padding: 0 20px;
         }
 
-        /* Barra superior sutil */
         .top-badge {
             background: #1f3f1f;
             color: #e0f0e0;
@@ -42,7 +41,6 @@
             text-transform: uppercase;
         }
 
-        /* Hero */
         .hero {
             background: white;
             border-radius: 0 0 40px 40px;
@@ -88,7 +86,6 @@
             border: 0;
         }
 
-        /* Beneficios rápidos (nuevo) */
         .benefits-row {
             display: flex;
             flex-wrap: wrap;
@@ -115,59 +112,6 @@
             font-size: 1.3rem;
         }
 
-        /* Contador NUEVO justo encima del form */
-        .countdown-box {
-            background: linear-gradient(135deg, #174217, #1f5a1f);
-            color: white;
-            border-radius: 40px;
-            padding: 25px 20px;
-            text-align: center;
-            margin: 20px 0 30px;
-            box-shadow: 0 15px 25px -8px #1f5a1f;
-            border: 1px solid #6fbf6f;
-        }
-
-        .countdown-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .countdown-title i {
-            margin-right: 10px;
-            color: #ffd966;
-        }
-
-        .countdown-flex {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .countdown-item {
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(4px);
-            border-radius: 20px;
-            padding: 12px 16px;
-            min-width: 90px;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .countdown-num {
-            font-size: 2.8rem;
-            font-weight: 800;
-            line-height: 1;
-            color: #ffffdd;
-        }
-
-        .countdown-label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            opacity: 0.9;
-        }
-
         .content-grid {
             display: flex;
             flex-wrap: wrap;
@@ -175,7 +119,6 @@
             margin-top: 20px;
         }
 
-        /* Columna izquierda - más compacta */
         .main-message {
             flex: 2;
             min-width: 300px;
@@ -247,7 +190,6 @@
             color: #2a8e2a;
         }
 
-        /* Columna derecha formulario */
         .form-side {
             flex: 1.2;
             min-width: 300px;
@@ -277,69 +219,65 @@
             border-radius: 12px;
         }
 
-        .google-form-embed {
-            width: 100%;
-            min-height: 520px; /* más compacto */
-            background: transparent;
-            border-radius: 20px;
-            overflow: hidden;
-            margin: 15px 0;
-        }
-
-        .google-form-embed iframe {
-            width: 100%;
-            height: 520px;
-            border: 0;
-            border-radius: 20px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #8bc34a; /* verde lima vibrante */
+        /* Botón principal para formulario (reemplaza al iframe) */
+        .form-button {
+            display: block;
+            background: #8bc34a;
             color: #1e3c1e;
             font-weight: 800;
-            padding: 16px 28px;
+            padding: 18px 24px;
             border-radius: 60px;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             text-decoration: none;
             box-shadow: 0 10px 20px -5px #5a9e5a;
             transition: all 0.2s;
-            border: none;
-            cursor: pointer;
-            width: 100%;
             text-align: center;
-            margin: 10px 0 15px;
-            border: 1px solid #6fa86f;
+            margin: 20px 0 15px;
+            border: 2px solid #6fa86f;
         }
 
-        .cta-button:hover {
+        .form-button:hover {
             background: #7ab03f;
             transform: scale(1.02);
             box-shadow: 0 15px 25px -6px #467346;
         }
 
-        .wa-contact {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
+        .form-button i {
+            margin-right: 10px;
+        }
+
+        .wa-button {
+            display: block;
             background: #e1f0e1;
-            padding: 12px 20px;
-            border-radius: 60px;
-            text-decoration: none;
             color: #0f4a0f;
             font-weight: 700;
-            margin: 10px 0 5px;
+            padding: 16px 24px;
+            border-radius: 60px;
+            text-decoration: none;
+            text-align: center;
+            margin: 15px 0 5px;
             border: 1px solid #93c793;
-            width: 100%;
+            font-size: 1.2rem;
         }
 
-        .wa-contact i {
-            font-size: 1.3rem;
+        .wa-button i {
+            margin-right: 10px;
             color: #25d366;
+            font-size: 1.5rem;
+            vertical-align: middle;
         }
 
-        /* FAQ compacto */
+        .wa-button span {
+            vertical-align: middle;
+        }
+
+        .privacy-note {
+            font-size: 0.75rem;
+            color: #4d6e4d;
+            margin-top: 15px;
+            text-align: center;
+        }
+
         .faq-mini {
             background: #f2fcf2;
             border-radius: 24px;
@@ -378,39 +316,15 @@
             border-top: 1px solid #bfdbbf;
         }
 
-        /* Botón flotante solo móvil */
-        .mobile-float {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            background: #8bc34a;
-            color: #1e3c1e;
-            font-weight: 800;
-            padding: 16px;
-            border-radius: 60px;
-            text-align: center;
-            text-decoration: none;
-            box-shadow: 0 10px 25px rgba(0,50,0,0.4);
-            border: 2px solid white;
-            z-index: 999;
-            font-size: 1.2rem;
-        }
-
         @media (max-width: 700px) {
             h1 { font-size: 1.9rem; }
             .benefits-row { flex-direction: column; align-items: stretch; gap: 10px; }
             .benefit-item { justify-content: center; }
-            .mobile-float { display: block; }
-            body { padding-bottom: 80px; }
-            .countdown-num { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Badge superior -->
     <div class="top-badge">
         <i class="fas fa-cube"></i> TECNOLOGÍA BLOCKCHAIN TRANSPARENTE · SIN ESTAFAS
     </div>
@@ -418,11 +332,10 @@
     <div class="container">
         <div class="hero">
             <h1>
-                <span class="highlight">11 de marzo, 7:30 PM (PT)</span><br>
-                Aprende con nosotros el ecosistema que ya cambia vidas
+                <span class="highlight">Oportunidad real</span><br>
+                Descubre el ecosistema que ya cambia vidas
             </h1>
 
-            <!-- VIDEO PRINCIPAL (el mismo) -->
             <div class="video-wrapper">
                 <iframe src="https://www.youtube.com/embed/wz7_8zxcrB4?si=qSA1TPWOiy886gFU&autoplay=0&rel=0" 
                         title="Video presentación" 
@@ -431,104 +344,66 @@
                 </iframe>
             </div>
 
-            <!-- Beneficios rápidos nuevos -->
             <div class="benefits-row">
                 <div class="benefit-item"><i class="fas fa-check-circle"></i> Sin experiencia necesaria</div>
-                <div class="benefit-item"><i class="fas fa-check-circle"></i> Caso real: mi amiga</div>
+                <div class="benefit-item"><i class="fas fa-check-circle"></i> Caso real: María, +6 años en la red</div>
                 <div class="benefit-item"><i class="fas fa-check-circle"></i> Acceso a Lemon Network</div>
             </div>
 
-            <!-- COLUMNAS: IZQUIERDA + DERECHA -->
             <div class="content-grid">
-                <!-- COLUMNA IZQUIERDA (persuasión compacta) -->
+                <!-- COLUMNA IZQUIERDA -->
                 <div class="main-message">
-                    <!-- Testimonio con foto (ilustrativa) -->
                     <div class="testimonial-card">
-                        <p>“Conocí a <strong>Carolina</strong> hace años, luchaba como muchos. Hoy, gracias al ecosistema Lemon, su vida es otra. No es magia, es decisión.”</p>
+                        <p>“Conozco a <strong>María</strong> desde hace años. Tiene más de 6 años en el ecosistema y hoy es una referencia. Su experiencia demuestra que esto no es moda, es el futuro.”</p>
                         <div class="testimonial-author">
-                            <!-- Imagen ilustrativa (puedes cambiarla por una real) -->
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amiga testimonio">
+                            <!-- Imagen ilustrativa, puedes reemplazarla por una real -->
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="María testimonio">
                             <div>
-                                <div class="author-name">Carolina G.</div>
-                                <div class="author-title">Miembro de Lemon Network · 14 meses</div>
+                                <div class="author-name">María G.</div>
+                                <div class="author-title">+6 años en Lemon Network · Experta en blockchain</div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Trust badges nuevos -->
                     <div class="trust-badges">
                         <span class="badge"><i class="fas fa-shield-alt"></i> Blockchain verificable</span>
                         <span class="badge"><i class="fas fa-users"></i> +2.300 miembros</span>
                         <span class="badge"><i class="fas fa-lock"></i> Sin bloqueos</span>
                     </div>
 
-                    <!-- Píldora rápida de Lemon -->
                     <p style="background:#e0f0e0; padding:16px; border-radius:20px;">
                         <strong>🍋 Lemon Chain (capa 1)</strong> + <strong>Lemon Network (recompensas)</strong> → La transparencia que buscabas.
                     </p>
                 </div>
 
-                <!-- COLUMNA DERECHA (formulario + contador + acción) -->
+                <!-- COLUMNA DERECHA (formulario simplificado) -->
                 <div class="form-side">
-                    <h3>📌 Reserva tu asiento</h3>
+                    <h3>📌 Accede a la sesión</h3>
                     <div class="form-sub">
-                        <i class="fas fa-clock"></i> Sesión limitada a 50 asistentes en vivo
+                        <i class="fas fa-clock"></i> Cupo limitado para mantener la calidad
                     </div>
 
-                    <!-- CONTADOR REGRESIVO REAL (JavaScript) -->
-                    <div class="countdown-box" id="countdownBox">
-                        <div class="countdown-title">
-                            <i class="fas fa-hourglass-half"></i> CUENTA REGRESIVA
-                        </div>
-                        <div class="countdown-flex" id="countdown">
-                            <div class="countdown-item">
-                                <span class="countdown-num" id="days">00</span>
-                                <span class="countdown-label">Días</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span class="countdown-num" id="hours">00</span>
-                                <span class="countdown-label">Horas</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span class="countdown-num" id="minutes">00</span>
-                                <span class="countdown-label">Min</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span class="countdown-num" id="seconds">00</span>
-                                <span class="countdown-label">Seg</span>
-                            </div>
-                        </div>
-                        <p style="margin-top:15px; font-size:0.9rem; opacity:0.9;">⏰ 11 de marzo · 7:30 PM (hora LA)</p>
-                    </div>
-
-                    <!-- FORMULARIO GOOGLE (el mismo) -->
-                    <div class="google-form-embed">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdubjwtqH4VNzGxFs34EnyAjQxhcITirzDFcqNo2bUX1Zc57w/viewform?embedded=true" 
-                                frameborder="0" marginheight="0" marginwidth="0">
-                            Cargando…
-                        </iframe>
-                    </div>
-
-                    <!-- Botón alternativo -->
+                    <!-- BOTÓN PARA FORMULARIO (enlace directo) -->
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdubjwtqH4VNzGxFs34EnyAjQxhcITirzDFcqNo2bUX1Zc57w/viewform" 
-                       target="_blank" class="cta-button">
-                        <i class="fas fa-pen"></i> LLENAR FORMULARIO
+                       target="_blank" 
+                       class="form-button">
+                        <i class="fas fa-pen"></i> INGRESAR AL FORMULARIO
                     </a>
 
-                    <!-- WhatsApp directo -->
-                    <a href="https://wa.me/13232850508?text=¡Quiero%20mi%20plaza%20para%20el%2011%20de%20marzo!" 
-                       target="_blank" class="wa-contact">
-                        <i class="fab fa-whatsapp"></i> +1 323 285 0508 (escríbeme)
+                    <!-- BOTÓN DE WHATSAPP (sin número visible) -->
+                    <a href="https://wa.me/13232850508?text=Hola%2C%20quiero%20participar%20en%20la%20sesi%C3%B3n%20del%20ecosistema%20Lemon" 
+                       target="_blank" 
+                       class="wa-button">
+                        <i class="fab fa-whatsapp"></i> <span>Contactar por WhatsApp</span>
                     </a>
 
-                    <!-- Texto de privacidad -->
-                    <p style="font-size:0.75rem; color:#4d6e4d; margin-top:15px;">
-                        <i class="fas fa-lock"></i> Datos solo para enviar acceso a Zoom.
+                    <p class="privacy-note">
+                        <i class="fas fa-lock"></i> Tus datos están seguros. Solo te contactaremos con información de la sesión.
                     </p>
                 </div>
             </div>
 
-            <!-- FAQ corto (elimina objeciones) -->
+            <!-- FAQ corto -->
             <div class="faq-mini">
                 <div class="faq-item">
                     <div class="faq-question"><i class="fas fa-question-circle"></i> ¿Necesito saber de cripto?</div>
@@ -539,64 +414,18 @@
                     <div class="faq-answer">Sí, totalmente gratis. Solo completa el formulario.</div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question"><i class="fas fa-question-circle"></i> ¿Me dan el enlace después?</div>
+                    <div class="faq-question"><i class="fas fa-question-circle"></i> ¿Cómo recibo el enlace?</div>
                     <div class="faq-answer">Te enviaremos el link de Zoom al correo y WhatsApp.</div>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
         <div class="footer-note">
             <i class="fas fa-shield-alt"></i> Ecosistema descentralizado Lemon · Transparencia Blockchain<br>
             <a href="#" style="color:#1f681f;">Aviso de privacidad</a> · <a href="https://wa.me/13232850508">WhatsApp</a>
-            <p style="margin-top:10px;">© 2026 · Sesión en vivo 11 marzo 7:30 PM (PT)</p>
+            <p style="margin-top:10px;">© 2026 · Oportunidad Lemon Network</p>
         </div>
     </div>
 
-    <!-- Botón flotante para móvil (baja al form) -->
-    <a href="#" class="mobile-float" onclick="document.querySelector('.form-side').scrollIntoView({behavior:'smooth'}); return false;">
-        <i class="fas fa-arrow-down"></i> QUIERO MI PLAZA
-    </a>
-
-    <!-- SCRIPT DEL CONTADOR REGRESIVO REAL -->
-    <script>
-        function startCountdown() {
-            // Fecha objetivo: 11 de marzo 2026, 7:30 PM (hora Los Ángeles, UTC-7 en marzo)
-            // Nota: Marzo en PDT (GMT-7). Ajustamos restando 7 horas.
-            const targetDate = new Date(2026, 2, 11, 19, 30, 0); // Marzo es mes 2 (0-index)
-            // Convertir a timestamp UTC-7 (LA)
-            // Opción simple: restar 7 horas al crear fecha local
-            const targetUTC = new Date(targetDate.getTime() - (7 * 60 * 60 * 1000)); // ajuste manual
-
-            function updateCountdown() {
-                const now = new Date();
-                const diff = targetUTC - now;
-
-                if (diff <= 0) {
-                    document.getElementById('days').innerText = '00';
-                    document.getElementById('hours').innerText = '00';
-                    document.getElementById('minutes').innerText = '00';
-                    document.getElementById('seconds').innerText = '00';
-                    document.getElementById('countdownBox').style.background = '#b33b3b';
-                    return;
-                }
-
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff % (86400000)) / (3600000));
-                const minutes = Math.floor((diff % 3600000) / 60000);
-                const seconds = Math.floor((diff % 60000) / 1000);
-
-                document.getElementById('days').innerText = days < 10 ? '0' + days : days;
-                document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
-                document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
-                document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
-            }
-
-            updateCountdown();
-            setInterval(updateCountdown, 1000);
-        }
-
-        window.onload = startCountdown;
-    </script>
 </body>
 </html>
